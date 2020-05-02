@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14159265
+
+int main()
+{
+    double x;
+    double result,val;
+    printf("Enter the Value of X ");
+    scanf("%lf",&x);//scan from user
+    val = PI / 180; // Conversion to Sixty system:
+    result= sin(x*val);   // find the value
+    if (result>=0 || result<=1)    // if to print in the rang (0,1)
+    {
+      printf("sin(%0.2lf) = %0.2lf\n", x, result);
+    }
+    else
+    {
+      printf("the result is not in rang");
+    }
+
+
+    return 0;
+}
